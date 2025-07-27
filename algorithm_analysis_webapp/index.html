@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algorithm Analysis Interactive Learning</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Interactive Algorithm Analysis</h1>
+  </header>
+  <main>
+    <section>
+      <h2>Introduction to Algorithm Analysis</h2>
+      <p>Understand the importance of analyzing algorithms in terms of time and space efficiency before implementation.</p>
+    </section>
+    <section>
+      <h2>Growth of Functions & Asymptotic Analysis</h2>
+      <p>Explore how algorithm performance scales with input size using Big-O, Theta (Θ), and Omega (Ω) notations.</p>
+      <div class="chart-container">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Big-O_notation.svg" width="500" alt="Big-O Chart">
+      </div>
+    </section>
+    <section>
+      <h2>Time and Space Complexity</h2>
+      <p>Time complexity indicates the execution time of an algorithm, while space complexity measures the memory usage.</p>
+    </section>
+    <section>
+      <h2>Algorithm Design Techniques</h2>
+      <ul>
+        <li>Divide and Conquer</li>
+        <li>Greedy Algorithms</li>
+        <li>Dynamic Programming</li>
+        <li>Backtracking</li>
+        <li>Branch and Bound</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Quiz</h2>
+      <div id="quiz">
+        <div class="question">
+          <p>1. What is the time complexity of binary search?</p>
+          <button onclick="checkAnswer(this, true)">O(log n)</button>
+          <button onclick="checkAnswer(this, false)">O(n)</button>
+        </div>
+        <div class="question">
+          <p>2. Which notation describes the best-case scenario?</p>
+          <button onclick="checkAnswer(this, false)">Big-O</button>
+          <button onclick="checkAnswer(this, true)">Omega (Ω)</button>
+        </div>
+        <div class="question">
+          <p>3. Which design technique solves subproblems and stores the result?</p>
+          <button onclick="checkAnswer(this, false)">Greedy</button>
+          <button onclick="checkAnswer(this, true)">Dynamic Programming</button>
+        </div>
+        <div class="result" id="result"></div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>© 2025 Algorithm Learning Tool</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
